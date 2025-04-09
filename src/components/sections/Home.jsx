@@ -10,7 +10,7 @@ export const Home = () => {
             bg-clip-text leading-right text-transparent
             
             ">
-                Hi , I'm Tommy
+                Hi , I'm Tommy Phan
             </h1>
 
             <p className="text-grat-400 text-lg mb-8 max-w-lg mx-auto">
