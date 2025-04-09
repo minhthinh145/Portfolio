@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import mySetup from "../../assets/images/mySetup.png";
+import logoHCMUE from "../../assets/images/logoHCMUE.png";
 export const About = () =>{
 
     const frontendSkills =["React", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap"];
@@ -84,23 +85,23 @@ export const About = () =>{
                 {/* Education & Work Experience */}
                 <div className="grid grid-cols-1 gap-6">
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                        <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
+                        <h3 className="text-xl font-bold mb-4">🏫 Education </h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-2">
                             <li>
                                 <strong>B.S. in Information Technology (In Progress)</strong> - University of Education [2023 - Now]
                             </li>
                         </ul>
                     </div>
-
+ 
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4">🏢 Work Experience</h3>
                         <div className="space-y-4 text-gray-300">
                             <div>
                                 <h4 className="font-semibold">
-                                    Software Engineer Intern - VNG Corporation [2/2026 - 5/2026]
+                                    Internship Aspiration - Aspiring to secure a software development internship in the upcoming year to gain hands-on experience in building scalable applications.
                                 </h4>
                                 <p>
-                                    Developer for internal tools using React and ASP.NET Core.
+                                    
                                 </p>
                             </div>
                         </div>
