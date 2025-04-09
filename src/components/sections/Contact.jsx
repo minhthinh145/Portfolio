@@ -85,7 +85,7 @@ export const Contact = () => {
                 <h2 className="text-3xl font-bold mb-8 bg-gradient-to-l from-blue-500 to-cyan-500 text-center bg-clip-text text-transparent">Connect with me through Social Media</h2>
                 <div className=" flex flex-row gap-x-4 justify-center items-center mt-10 ">   
                     <a 
-                    href="www.linkedin.com/in/huỳnh-minh-thịnh-phan-31b538343/"
+                    href="https://www.linkedin.com/in/huỳnh-minh-thịnh-phan-31b538343/"
                     target="_blank" 
                     rel="noopener noreferrer" 
                     >
