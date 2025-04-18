@@ -1,11 +1,37 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import mySetup from "../../assets/images/mySetup.png";
 import logoHCMUE from "../../assets/images/logoHCMUE.png";
+import js from "../../assets/images/js.svg";
+import reactIcon from "../../assets/react.svg";
+import html from "../../assets/images/html5.svg";
+import css from "../../assets/images/css3.svg";
+import tailwind from "../../assets/images/tailwind.svg";
+import bootstrap from "../../assets/images/bootstrap.svg";
+import donet from "../../assets/images/dotnet.svg";
+import oracle from "../../assets/images/oracle.svg";
+import mssql from "../../assets/images/mssql.svg";
+import postgresql from "../../assets/images/postgre.svg";
+import mysql from "../../assets/images/mysql.svg";
 export const About = () =>{
-
-    const frontendSkills =["React", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap"];
-    const backendSkills =["ASP.NET Core","RESTful APIs", "Entity Framework"];
-    const databaseSkills =["MSSQL", "PostgreSQL", "MySQL", "Oracle"];
+    const frontendSkills = [
+        { name: "React", icon: reactIcon },
+        { name: "JavaScript", icon: js },
+        { name: "HTML", icon: html },
+        { name: "CSS", icon: css },
+        { name: "Tailwind CSS", icon: tailwind },
+        { name: "Bootstrap", icon: bootstrap }
+    ];
+    const backendSkills = [
+        { name: "ASP.NET Core", icon: donet},
+        { name: "RESTful APIs",  },
+        { name: "Entity Framework"}
+    ];
+    const databaseSkills =[
+       {name : "MSSQL", icon : mssql} ,
+        {name :"PostgreSQL", icon : postgresql}, 
+        {name : "MySQL", icon : mysql}, 
+        {name : "Oracle", icon : oracle}
+    ];
     return <section id="about" className="min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 overflow-visible">
@@ -31,58 +57,61 @@ export const About = () =>{
                     My Skills
                 </h2>
                 {/* Skills */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    
-                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                        <h3 className="text-xl font-bold mb-4">Frontend</h3>
-                        <div className="flex flex-wrap gap-2">
-                            {frontendSkills.map((tech, key) => (
-                                <span 
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
-                                    rounded-full text-sm hover:bg-blue-500/20
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                                    
+                                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                        <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {frontendSkills.map((tech, key) => (
+                                                <span 
+                                                    key={key}
+                                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
+                                                    rounded-full text-sm hover:bg-blue-500/20
+                                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition flex items-center gap-2"
+                                                >
+                                                    {tech.icon && <img src={tech.icon} alt={tech.name} className="h-6 w-6" />}
+                                                    {tech.name}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
 
-                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                        <h3 className="text-xl font-bold mb-4">Backend</h3>
-                        <div className="flex flex-wrap gap-2">
-                            {backendSkills.map((tech, key) => (
-                                <span 
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
-                                    rounded-full text-sm hover:bg-blue-500/20
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                        <h3 className="text-xl font-bold mb-4">Backend</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {backendSkills.map((tech, key) => (
+                                                <span 
+                                                    key={key}
+                                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
+                                                    rounded-full text-sm hover:bg-blue-500/20
+                                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition flex items-center gap-2"
+                                                >
+                                                    {tech.icon && <img src={tech.icon} alt={tech.name} className="h-6 w-6" />}
+                                                    {tech.name}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
 
-                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                        <h3 className="text-xl font-bold mb-4">Database</h3>
-                        <div className="flex flex-wrap gap-2">
-                            {databaseSkills.map((tech, key) => (
-                                <span 
-                                    key={key}
-                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
-                                    rounded-full text-sm hover:bg-blue-500/20
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                                    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                        <h3 className="text-xl font-bold mb-4">Database</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {databaseSkills.map((tech, key) => (
+                                                <span 
+                                                    key={key}
+                                                    className="bg-blue-500/10 text-blue-500 py-1 px-3 
+                                                    rounded-full text-sm hover:bg-blue-500/20
+                                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition flex items-center gap-2"
+                                                >
+                                                    {tech.icon && <img  src={tech.icon} alt={tech.name} className="h-6 w-6"/>}
+                                                    {tech.name}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
 
-                {/* Education & Work Experience */}
+                                {/* Education & Work Experience */}
                 <div className="grid grid-cols-1 gap-6">
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4">🏫 Education </h3>
