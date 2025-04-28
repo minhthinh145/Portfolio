@@ -6,6 +6,7 @@ import mssqlLogo from "../../assets/images/mssql.svg";
 import aspDotNetLogo from "../../assets/images/dotnet.svg";
 import azureLogo from "../../assets/images/azure.svg";
 import gitLogo from "../../assets/images/git.svg";
+import firebaseLogo from "../../assets/images/firebase.svg";
 export const Projects = () => {
   const technologies = [
     { name: "React", icon: reactLogo },
@@ -14,6 +15,7 @@ export const Projects = () => {
     { name: "ASP .NET Core", icon: aspDotNetLogo },
     { name: "Azure", icon: azureLogo },
     { name: "Git", icon: gitLogo },
+    { name: "Firebase", icon: firebaseLogo },
   ];
 
   return (
@@ -34,12 +36,11 @@ export const Projects = () => {
               className="p-6 rounded-xl border border-white/10 
                 hover:-translate-y-1 hover:border-blue-500/30 
                 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all
-                
                 "
             >
               <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                 {" "}
-                Website E-comerce
+                Website E-commerce
               </h3>
               <p className="text-gray-300 mb-4">
                 This project is a modern e-commerce website designed for selling
@@ -52,20 +53,9 @@ export const Projects = () => {
               </h3>
               <div className="flex items-center text-gray-300 mb-4">
                 <p>
-                  The backend has been completed, and the frontend is currently
-                  under development :
+                  The backend has been completed and is being continuously
+                  expanded:
                 </p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/minhthinh145/FrontEnd_WebSite"
-                >
-                  <img
-                    src={socialImage}
-                    alt="GitHub Logo"
-                    className="h-12 w-12 ml-2"
-                  />
-                </a>
               </div>
               <div className="flex items-center gap-x-2 my-6">
                 <a
@@ -75,6 +65,21 @@ export const Projects = () => {
                   className="text-blue-400 hover:text-blue-300 transition-colors flex items-center"
                 >
                   View backend
+                  <img
+                    src={socialImage}
+                    alt="GitHub Logo"
+                    className="h-12 w-12 ml-2"
+                  />
+                </a>
+              </div>
+              <div className="flex items-center gap-x-2 my-6">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/minhthinh145/FrontEnd_WebSite"
+                  className="text-blue-400 hover:text-blue-300 transition-colors flex items-center"
+                >
+                  View frontend
                   <img
                     src={socialImage}
                     alt="GitHub Logo"

@@ -12,6 +12,7 @@ import oracle from "../../assets/images/oracle.svg";
 import mssql from "../../assets/images/mssql.svg";
 import postgresql from "../../assets/images/postgre.svg";
 import mysql from "../../assets/images/mysql.svg";
+import firebase from "../../assets/images/firebase.svg";
 export const About = () => {
   const frontendSkills = [
     { name: "React", icon: reactIcon },
